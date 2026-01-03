@@ -11,3 +11,6 @@ dist/
 .tmp/
 build/
 .DS_Store
+config.env
+app_config.json
+.vscode/

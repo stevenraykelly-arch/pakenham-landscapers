@@ -8,7 +8,7 @@ def main():
     print("Starting Deterministic Deployment...")
     
     # Project Name based on strategy (normally passed in)
-    project_name = "north-melbourne-bathroom"
+    project_name = "web-factory-astro-v1"
     # Using current dir as simulation
     target_dir = os.getcwd() 
     app_dir = os.path.join(target_dir, "app")
