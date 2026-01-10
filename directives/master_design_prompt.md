@@ -3,14 +3,14 @@
 ## 1. Setup: Business Details (USER: FILL THIS IN)
 **Copy and paste this section with your specific details before running the prompt.**
 
-*   **Business Name:** Pakenham Landscapers
-*   **Primary Service:** Residential & Commercial Landscaping
-*   **Target Area:** Pakenham and Casey Shire, VIC
-*   **Contact Info:** info@landscaperspakenham.com.au
-*   **Key Differentiators:** Family Owned, "Not Right? Fix in 24hrs or Don't Pay" Guarantee, Fully Insured
-*   **Target Audience:** Homeowners, Property Managers, Commercial Managers
+*   **Business Name:** [Business Name] (e.g., Pakenham Landscapers)
+*   **Primary Service:** [Primary Trade] (e.g., Residential & Commercial Landscaping)
+*   **Target Area:** [City/Region] (e.g., Pakenham and Casey Shire, VIC)
+*   **Contact Info:** [Email/Phone]
+*   **Key Differentiators:** [3 Unique Selling Points] (e.g., Family Owned, 24hr Guarantee, Insured)
+*   **Target Audience:** [Customer Personas]
 *   **Tone of Voice:** Friendly, Professional, Trustworthy
-*   **Must-Use Keywords:** "landscaping pakenham", "landscaping pakenham vic", "landscapers pakenham", "landscape gardeners pakenham", "lawn mowing services pakenham", "lawn care services pakenham"
+*   **Must-Use Keywords:** [List 5-10 high-value keywords]
 
 ---
 
@@ -66,13 +66,13 @@ Every page MUST use a reusable `<SEO />` component:
 
 **Mandatory Technical Checklist:**
 *   **Semantic HTML:** Use `<section>`, `<article>`, `<header>`, `<footer>`, and proper `<h1>`-`<h6>` hierarchy.
-*   **Clean URLs:** Maintain a logical hierarchy (e.g., `/services/asphalt-repairs`).
+*   **Clean URLs:** Maintain a logical hierarchy (e.g., `/services/[service-slug]`).
 *   **Schema Markup (JSON-LD):** MANDATORY. Do not rely on generic metadata. You must generate specific `LocalBusiness` schema (with explicit `geo`, `priceRange`, `areaServed`) and `FAQPage` schema for the Index page. Inject this via a `schema` prop in the SEO component.
 *   **Zero-Legacy Artifacts:** `Layout.astro` and `SEO.astro` configuration MUST use widely generic defaults (e.g., "Local Service Experts") if props are missing. NEVER hardcode a previous client's name (e.g., "Brisbane Bitumen") as a default.
 *   **Content Depth (FAQ & Silos):** MANDATORY. 
     *   **FAQ:** Every homepage must include a "Local Expert FAQ" section.
     *   **Silos:** You must create at least 4 dedicated Service Pages (e.g., `/services/retaining-walls`). Single-page sites are BANNED. Each service page must be 800+ words.
-    *   **Locations:** "Doorway Pages" are BANNED. Location pages (e.g., `/landscaping-officer`) must contain 50% unique content specific to that suburb (e.g., mentioning specific estates like "Arcadia", local soil conditions, or specific council overlays).
+    *   **Locations:** "Doorway Pages" are BANNED. Location pages (e.g., `/locations/service-suburb`) must contain 50% unique content specific to that suburb (e.g., mentioning specific estates, local statutes, or environment).
 *   **System Integration:** Update `App.tsx` (Routing), `Layout.tsx` (Linking), `sitemap.xml`, and `robots.txt` for every new page.
 
 ---
@@ -86,8 +86,8 @@ Every page MUST use a reusable `<SEO />` component:
 *   Reference specific local conditions (e.g., "saltwater corrosion" for coastal areas, "reactive clay" for foundations).
 
 **Strategies for AI & LLM Ranking (GEO):**
-*   **Specific Data Feeding:** Provide hyper-specific technical details (e.g., "75mm thick industrial-grade bitumen," "non-toxic sealant"). AI users ask specific questions; you must provide the specific answers for the AI to cite.
-*   **Comparison Data:** Create sections or tables comparing service levels or common industry methods (e.g., "Asphalt vs. Concrete: Which is better for Gold Coast heat?").
+*   **Specific Data Feeding:** Provide hyper-specific technical details (e.g., product dimensions, material grades, regulations). AI users ask specific questions; you must provide the specific answers for the AI to cite.
+*   **Comparison Data:** Create sections or tables comparing service levels or common industry methods (e.g., "Method A vs. Method B: Which is better for [Location]?").
 *   **Brand Mentions & Trust:** Explicitly mention 5-star ratings, "Licensed & Insured" status, and "Australian Owned" badges to provide "verifiable facts" for AI models.
 
 ---
