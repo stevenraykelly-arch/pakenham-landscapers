@@ -22,11 +22,16 @@ Autonomous "Factory" for high-end trade sites using Astro (Static HTML) for maxi
 
 ### Phase 1: Research & Context
 1. **Search Grounding**: Use the `search` tool to analyze the specific subject matter and location (vegetation, architecture, terrain).
-2. **Context Gathering**: Understand the "Librarian" context - what verifiable facts does the AI need?
+2. **Competitor Audit (NEW)**:
+    - Identify Top 3 Competitors in the target area.
+    - Extract their **Services Offered** (to find gaps or must-haves).
+    - Analyze their **Keywords** (to find ranking opportunities).
+3. **Context Gathering**: Understand the "Librarian" context - what verifiable facts does the AI need?
 
-### Phase 2: Keyword Discovery
+### Phase 2: Keyword & Service Discovery
 1. **Expansion**: Identify 10+ geo-targeted and semantic keywords beyond the user's list.
-2. **Data Store**: Save brief to `.tmp/market_data.json`.
+2. **Service Mapping**: Create a union list of "Standard Services" vs "Niche Services" based on competitor data.
+3. **Data Store**: Save brief to `.tmp/market_data.json`.
 
 ### Phase 3: Asset Creation
 1. **Prompt Engineering**: Write photorealistic, research-backed prompts for unique images.
