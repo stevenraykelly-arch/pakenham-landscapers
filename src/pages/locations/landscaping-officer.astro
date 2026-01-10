@@ -15,10 +15,23 @@ const locationSchema = JSON.stringify({
     "addressCountry": "AU"
   },
   "areaServed": {
-    "@type": "City",
-    "name": "Officer"
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": -38.0667,
+        "longitude": 145.4167
+    },
+    "geoRadius": "5000"
   },
-  "description": "Specialist landscaping for Officer's new estates including Arcadia, Timbertop, and Grandvue. Experts in retaining walls for Officer's sloping blocks."
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:00",
+      "closes": "17:00"
+    }
+  ],
+  "description": "Specialist landscaping for Officer's new estates including Arcadia, Timbertop, and Grandvue. Experts in retaining walls for Officer's sloping blocks and sodic soil management near Gum Scrub Creek."
 });
 ---
 
@@ -48,28 +61,54 @@ const locationSchema = JSON.stringify({
         </div>
     </section>
 
-    <!-- Local Knowledge -->
+    <!-- Local Knowledge / Handbook -->
     <section class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-3xl font-bold text-slate-900 mb-8">We Know Your Estate Guidelines</h2>
+            <h2 class="text-3xl font-bold text-slate-900 mb-8">The Officer Landscaping Handbook</h2>
             <div class="prose prose-lg text-slate-600">
                 <p>
-                    Building in Officer is different to Pakenham. The new master-planned communities here have strict design covenants. We deal with:
+                    Building in Officer (3809) presents unique challenges compared to the rest of Casey Shire. From the steep gradients of Timbertop to the reactive clay flats of Arcadia, we index our build methods to your specific estate guidelines.
                 </p>
-                <div class="grid md:grid-cols-2 gap-8 my-8">
-                    <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Timbertop & Grandvue</h3>
-                        <p class="text-sm"><strong>The Challenge:</strong> Slope. These estates are hilly. You likely need significant retention.</p>
-                        <p class="text-sm mt-4 text-emerald-600 font-bold">✓ We engineer walls >1m.</p>
+                
+                <div class="grid md:grid-cols-2 gap-8 my-10">
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:border-emerald-500 transition-colors">
+                        <div class="text-xs font-bold text-emerald-600 uppercase tracking-widest mb-2">Estate Profile</div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">Timbertop & Grandvue</h3>
+                        <p class="text-sm mb-4"><strong>The Terrain:</strong> High gradient slopes requiring significant cut-and-fill.</p>
+                        <p class="text-sm mb-4"><strong>The Covenant:</strong> Strict "Natural Materials" aesthetic. Retaining walls often require natural stone facing or timber sleepers; plain concrete is frequently restricted.</p>
+                        <ul class="text-sm font-bold text-emerald-700 space-y-2 mt-4">
+                            <li>✓ Textured Concrete Sleepers</li>
+                            <li>✓ Engineered Walls > 1.2m</li>
+                        </ul>
                     </div>
-                    <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Arcadia & Kaduna Park</h3>
-                        <p class="text-sm"><strong>The Challenge:</strong> Waterlogging. The heavy clay flats here struggle to drain.</p>
-                        <p class="text-sm mt-4 text-emerald-600 font-bold">✓ We install perimeter Ag-Drains.</p>
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:border-emerald-500 transition-colors">
+                        <div class="text-xs font-bold text-emerald-600 uppercase tracking-widest mb-2">Estate Profile</div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">Arcadia & Kaduna Park</h3>
+                        <p class="text-sm mb-4"><strong>The Terrain:</strong> Ancient river flats near Gum Scrub Creek. Soil is highly "Sodic" (dispersive) and prone to waterlogging.</p>
+                        <p class="text-sm mb-4"><strong>The Solution:</strong> Standard drainage isn't enough. We install rubble pits and gypsum-treat the subgrade to prevent your lawn from becoming a swamp in winter.</p>
+                        <ul class="text-sm font-bold text-emerald-700 space-y-2 mt-4">
+                            <li>✓ Perimeter Ag-Drains</li>
+                            <li>✓ Gypsum Soil Breaking</li>
+                        </ul>
                     </div>
                 </div>
+
+                <div class="bg-emerald-50 p-8 rounded-2xl border border-emerald-100 my-10">
+                    <h3 class="text-xl font-bold text-emerald-900 mb-4">Cardinia Shire Design FAQ</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-bold text-slate-900">Do I need a permit for front fencing?</h4>
+                            <p class="text-sm text-slate-700 mt-1">If you are on a corner block in Officer, Cardinia Shire restricts front fence height to maintain "sight lines" for traffic. We handle the report and consent process for you.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">What is the "Nature Strip Permeability" rule?</h4>
+                            <p class="text-sm text-slate-700 mt-1">Officer PSP guidelines require a minimum % of your front yard to be "permeable" (grass/garden) to reduce storm runoff into Western Port Bay. We design your driveway and paths to balance hard surfaces with compliant soft-scaping.</p>
+                        </div>
+                    </div>
+                </div>
+
                 <p>
-                    We guarantee our designs meet the <strong>Officer Precinct Structure Plan (PSP)</strong> requirements for nature strip protection and front garden permeability.
+                    We guarantee our designs meet the <strong>Officer Precinct Structure Plan (PSP)</strong> requirements. Don't risk a council rectification order with a non-compliant landscaper.
                 </p>
             </div>
         </div>
