@@ -40,8 +40,12 @@ Autonomous "Factory" for high-end trade sites using Astro (Static HTML) for maxi
     *   **Hero:** 1x Global Hero.
 3.  **Brand Identity (Logo/Favicon):**
     *   **Check:** If USER provided a logo, copy to `public/images/logo.png`.
-    *   **Generate (If Null):** Generate a "Clean, Simple, Elegant" logo matching the brand colors. Save as `public/images/logo.png`.
-    *   **Favicon:** Generate a matching 64x64 favicon. Save as `public/favicon.ico`.
+    *   **Generate (Professional Standard):** Apply "Paul Rand" principles:
+        1.  **Distinctive:** No generic clipart (e.g., standard leaves). Use abstract geometric forms (e.g., a structural block merging with organic curve).
+        2.  **Memorable:** Simple enough to be drawn by memory.
+        3.  **Scalable:** Must work as a 16px favicon and a billboard.
+        4.  **Prompt Strategy:** "Minimalist [Industry] logo. Abstract geometric icon [Shape Concept] + Bold Modern Sans-Serif typography. [Brand Color] and Dark Grey. High negative space. No gradients/shadows."
+    *   **Favicon:** Extract the icon element only. wb
 
 ### Phase 4: Page Build & Component Assembly
 1. **Structure**: Use `src/layouts/Layout.astro` and `src/pages/index.astro`.
