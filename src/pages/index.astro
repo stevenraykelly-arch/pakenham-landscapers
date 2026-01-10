@@ -37,14 +37,75 @@ const services = [
 ];
 
 const locations = ["Pakenham", "Officer", "Berwick", "Clyde North", "Narre Warren", "Beaconsfield", "Emerald"];
+
+const schema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LandscapingBusiness",
+      "name": "Pakenham Landscapers",
+      "image": "https://pakenhamlandscapers.com.au/images/hero.png",
+      "@id": "https://pakenhamlandscapers.com.au/#organization",
+      "url": "https://pakenhamlandscapers.com.au",
+      "telephone": "+61300000000",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pakenham",
+        "addressRegion": "VIC",
+        "postalCode": "3810",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -38.0712,
+        "longitude": 145.4878
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": -38.0712,
+          "longitude": 145.4878
+        },
+        "geoRadius": "20000"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need a planning permit for a retaining wall in Pakenham?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the Cardinia and Casey Shire council areas, any retaining wall over 1 meter in height requires a building permit. Additionally, if the wall is within 1 meter of a title boundary or easement, engineering is typically required regardless of height."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does landscaping cost in Pakenham?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cost varies by scope, but a typical new estate front yard including driveway concreting, soil remediation, and planting ranges from $15k to $25k. Full blocked sloping sites requiring structural retaining walls can range from $30k to $80k+."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My backyard floods when it rains. Can you fix it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We solve this by installing agricultural drains (Ag-Pipe) connected to your stormwater system and using gypsum to break down the reactive clay structure."
+          }
+        }
+      ]
+    }
+  ]
+});
 ---
 
-<Layout>
-    <SEO 
-        title="Pakenham Landscapers | Retaining Walls, Paving & Design"
-        description="Local Pakenham landscaping specialists. Family owned, fully insured. Expert retaining walls, paving, and indigenous planting for Casey Shire homes. 24hr fix guarantee."
-        canonical="/"
-    />
+<Layout title="Pakenham Landscapers | Retaining Walls, Paving & Design" description="Local Pakenham landscaping specialists. Family owned, fully insured. Expert retaining walls, paving, and indigenous planting for Casey Shire homes." schema={schema}>
+
 
     <!-- Background Texture -->
     <div class="fixed inset-0 pointer-events-none opacity-[0.4] z-[100] bg-[url('https://www.transparenttextures.com/patterns/concrete-wall.png')] mix-blend-multiply"></div>

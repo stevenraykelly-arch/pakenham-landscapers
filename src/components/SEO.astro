@@ -4,13 +4,15 @@ interface Props {
 	description: string;
 	canonical?: string;
 	image?: string;
+    schema?: string;
 }
 
 const { 
     title, 
     description, 
     canonical = Astro.url.pathname, 
-    image = '/images/og-default.jpg' 
+    image = '/images/og-default.jpg',
+    schema
 } = Astro.props;
 
 const siteName = "Brisbane Bitumen & Lines Co."; 
@@ -40,3 +42,5 @@ const siteName = "Brisbane Bitumen & Lines Co.";
 <!-- Robot Tags -->
 <meta name="robots" content="index, follow" />
 <meta name="googlebot" content="index, follow" />
+
+{schema && <script type="application/ld+json" set:html={schema} />}

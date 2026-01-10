@@ -5,11 +5,13 @@ import SEO from '../components/SEO.astro';
 interface Props {
 	title: string;
 	description?: string;
+    schema?: string;
 }
 
 const { 
     title, 
-    description = "Brisbane Bitumen & Lines Co. - Fast-response bitumen repairs and precision line marking across Brisbane, Ipswich, and Logan." 
+    description = "Pakenham Landscapers - Residential & Commercial Landscaping Specialists.",
+    schema
 } = Astro.props;
 ---
 
@@ -23,6 +25,7 @@ const {
 		<SEO 
             title={title}
             description={description}
+            schema={schema}
         />
 	</head>
 	<body>
