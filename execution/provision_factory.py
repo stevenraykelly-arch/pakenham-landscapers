@@ -63,6 +63,9 @@ def provision_factory(project_name, repo_path):
     app_uuid = app.get('uuid')
     print(f"Created Application: {app_uuid}")
     
+    deploy_webhook = f"{COOLIFY_API_URL}/deploy?uuid={app_uuid}&force=true"
+    print(f"Deploy Webhook: {deploy_webhook}")
+    
     # NEW: Domain Handshake Prompt & Instructions
     print("\n" + "="*50)
     print("🚀 INFRASTRUCTURE READY!")
