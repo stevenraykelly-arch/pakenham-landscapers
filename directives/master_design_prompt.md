@@ -11,7 +11,7 @@
 *   **Target Audience:** [Customer Personas]
 *   **Tone of Voice:** Friendly, Professional, Trustworthy
 *   **Brand Colors:** [Primary Hex] (e.g., #059669), [Secondary Hex]
-*   **Logo:** [Path to Logo] (Leave empty to auto-generate)
+
 *   **Must-Use Keywords:** [List 5-10 high-value keywords]
 
 ---
