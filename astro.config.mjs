@@ -3,6 +3,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
+    site: 'https://landscaperspakenham.com.au',
     integrations: [tailwind()],
     server: {
         host: true
@@ -12,10 +13,10 @@ export default defineConfig({
     },
     vite: {
         server: {
-            allowedHosts: ['w4cw84cwkwskc0cw4c80gs8k.170.64.136.227.sslip.io']
+            allowedHosts: ['landscaperspakenham.com.au', 'www.landscaperspakenham.com.au', 'w4cw84cwkwskc0cw4c80gs8k.170.64.136.227.sslip.io']
         },
         preview: {
-            allowedHosts: ['w4cw84cwkwskc0cw4c80gs8k.170.64.136.227.sslip.io']
+            allowedHosts: ['landscaperspakenham.com.au', 'www.landscaperspakenham.com.au', 'w4cw84cwkwskc0cw4c80gs8k.170.64.136.227.sslip.io']
         }
     }
 });

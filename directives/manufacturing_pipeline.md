@@ -3,7 +3,11 @@
 ## 1. PURPOSE
 Autonomous "Factory" for high-end trade sites using Astro (Static HTML) for maximum performance and minimum resource usage.
 - Brain: Gemini 1.5 Pro (Research & UI)
-- Eyes: Nano Banana Pro (NBP) (Hero Imagery)
+- Eyes: Nano Banana Pro (NBP)
+    *   **Hero:** 1x Global Hero.
+3.  **Brand Identity (Logo):**
+    *   **Check:** If USER provided a logo path, copy to `public/images/logo.png` and update `Header.astro` to use `<img>` tag.
+    *   **Fallback (Standard Build):** If NO logo is provided, do NOT generate one. Use the standard **Text + SVG Icon** layout in `Header.astro`.
 - Hands: Python/Git/Coolify (Deployment)
 - Standard: [Master Design Prompt](file:///c:/Users/srkel/Downloads/Website-builder-antigravity-at-scale/directives/master_design_prompt.md)
 
@@ -58,7 +62,12 @@ Autonomous "Factory" for high-end trade sites using Astro (Static HTML) for maxi
 3.  **Infrastructure**: Deploy using the factory's automated scripts to Coolify.
 
 ## 5. COOLIFY DEPLOYMENT PROTOCOL
-(Unchanged - using Nixpacks for Astro)
+*   **Standard:** Deploy to staging (e.g., `[project].coolify.app`).
+*   **Custom Domain (When Requested):**
+    1.  **Identify:** Check `master_design_prompt.md` or User Request for the domain name.
+    2.  **Config:** Update Coolify Service -> Settings -> Domains.
+    3.  **DNS:** Provide the USER with the necessary A Records / CNAME pointing to the Coolify IP.
+    4.  **Verify:** Ensure SSL generation succeeds.
 
 ## 6. SELF-ANNEALING LOOPS
 - **Performance Fail**: If Lighthouse score < 95, optimize images -> Regenerate.

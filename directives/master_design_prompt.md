@@ -12,6 +12,7 @@
 *   **Tone of Voice:** Friendly, Professional, Trustworthy
 *   **Brand Colors:** [Primary Hex] (e.g., #059669), [Secondary Hex]
 *   **Logo:** [Path to Logo] (Recommended: Horizontal layout, 4:1 ratio, transparent background)
+*   **Custom Domain:** landscaperspakenham.com.au
 *   **Must-Use Keywords:** [List 5-10 high-value keywords]
 
 ---
